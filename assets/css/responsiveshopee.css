@@ -1,0 +1,41 @@
+/* PC */
+@media (min-width:64em){
+
+}
+/*mobie va tablet */ 
+@media  (max-width:63.9375em) { 
+}
+/* tablet */
+@media (min-width:46.25em) and (max-width:63.9375em) {
+   
+    
+
+}
+
+/* mobie */
+@media (max-width:46.1875em){ 
+    .navbar__mobile-menu {
+        display: block;
+    }
+    .header__navbar {
+        display: none;
+    }
+
+    .header__navbar-mobie {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+        z-index: 5;
+    }
+    .header__navbar-item, .navbar__item-link {
+       
+        color: var(--text-color);
+        
+    }
+    .header__lable-shop {
+        display: none;
+    }
+}
