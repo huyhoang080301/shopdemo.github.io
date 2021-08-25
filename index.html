@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsiveshopee.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
     <div class="app">
         <header class="app__header">
-            <div class="grid">
+            <div class="grid wide">
                     
                         <!-- navbar  -->
-                    <nav class="header__navbar">
+                    <nav class="header__navbar hide-on-mobie-tablet">
     <!-- navbar PC -->
                             <ul class="header__navbar-list">
                                     <li class="header__navbar-item header__navbar-item--separate">
@@ -131,10 +132,13 @@
                         <!-- Search -->
                     <div class="header__search">
                     
-                        
+                            <!-- search mobie -->
+                            <label for="mobie-search" class="header-search-mobie hide-on-pc">
+                                <i class="header-search-mobie-icon fas fa-search"></i>
+                            </label>
                                 <!-- logo-shopee -->
-                            <div class="header__lable-shop">
-                            <a href="/shoppee.html" class="logo-link">
+                            <div class="header__lable-shop hide-on-tablet">
+                            <a href="#" class="logo-link">
                                 <svg viewBox="0 0 192 65" class="logo-img">
                                     <g fill-rule="evenodd">
                                         <path
@@ -145,12 +149,15 @@
                             </a>
                                 
                             </div>
+
+                            <input type="checkbox" hidden id="mobie-search" class="header-input-seach">
                                     <!-- search-bar -->
-                            <div class="search-bar"> 
+                            <div class="search-bar "> 
                                 <div class="input-serch-bar"> 
                                     <input type="text" class="search-bar__input" placeholder="Nhập tên sản phẩm">
                                             <!-- history -->
                                     <ul class="history-list">
+                                        <h3 class="history-search">Lịch sử tìm kiếm</h3>
                                         <li class="history-item"> 
                                             <a href=" "> Freeshiping 0Đ toàn sàn</a>
                                             </li>
@@ -430,15 +437,33 @@
 
                     </div>
             </div>   
+
+            <!-- header-sort-bar  -->
+          
+                <ul class="header-sort-bar__list hide-on-pc">
+                    <li class="header-sort-bar__item">
+                        <a href="" class="header-sort-bar__link">Liên quan   </a>
+                    </li>
+                    <li class="header-sort-bar__item">
+                        <a href="" class="header-sort-bar__link header-sort-bar__link--primary">Mới nhất   </a>
+                    </li>
+                    <li class="header-sort-bar__item">
+                        <a href="" class="header-sort-bar__link">Bán chạy   </a>
+                    </li>
+                    <li class="header-sort-bar__item">
+                        <a href="" class="header-sort-bar__link">Giá   </a>
+                    </li>
+                </ul>
+           
         </header>
 
         <div class="app__container">
 
-            <div class="grid">
+            <div class="grid wide">
 
-                <div class="grid__row grid__row-content">
+                <div class="row grid__row-content">
                             <!-- navigation content -->
-                    <div class="grid__col-2">
+                    <div class="col l-2 m-0 c-0">
 
                         <nav class="category">
                             <h3 class="category__heading">
@@ -460,9 +485,9 @@
 
                     </div>
                     <!-- content -->
-                    <div class="grid__col-10">
+                    <div class="col l-10 m-12 c-12">
                                 <!-- sort + filter -->
-                                <div class="homepage-controll">
+                                <div class="homepage-controll hide-on-mobie-tablet">
 
                                     <span class="homepage__title">Sắp xếp theo</span>
                                     
@@ -505,12 +530,52 @@
 
                                 </div>
                                 
+                                <nav class="mobie-tablet-nav-product hide-on-pc">
+                                    <ul class="mobie-tablet-nav-product__list">
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu   </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                        <li class="mobie-tablet-nav-product__item">
+                                            <a href="" class="mobie-tablet-nav-product__link">Đồ gia đình & vận dụng nấu </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                                 <!-- product Box -->
                                 <div class="box-product">
 
-                                    <div class="grid__row">
+                                    <div class="row">
                                             
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -564,7 +629,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -618,7 +683,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -672,7 +737,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -726,7 +791,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -780,7 +845,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -834,7 +899,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -888,7 +953,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -942,7 +1007,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -996,7 +1061,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="grid__col-2-of-10">
+                                                <div class="col l-2-4 m-4 c-6">
                                                     <!-- product item -->
                                                     <a class="box-product-item" href="#">
                                                         <div class="box-product-item__img" 
@@ -1116,9 +1181,9 @@
         </div>
 
         <footer class="app__footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__col-fifth">
+            <div class="grid ">
+                <div class="row footer-content">
+                    <div class="col l-2-4 m-4 c-6">
                         <ul class="footer-list">
                             
                                 <h3 class="footer-title">CHĂM SÓC KHÁCH HÀNG </h3>
@@ -1138,7 +1203,7 @@
 
                         </ul>
                     </div>
-                    <div class="grid__col-fifth">
+                    <div class="col l-2-4 m-4 c-6">
                         <ul class="footer-list">
                             
                                 <h3 class="footer-title">VỀ SHOPEE </h3>
@@ -1158,7 +1223,7 @@
 
                         </ul>
                     </div>
-                    <div class="grid__col-fifth">
+                    <div class="col l-2-4 m-4 c-6">
                         <ul class="footer-list">
                             
                                 <h3 class="footer-title">CHĂM SÓC KHÁCH HÀNG </h3>
@@ -1178,7 +1243,7 @@
 
                         </ul>
                     </div>
-                    <div class="grid__col-fifth">
+                    <div class="col l-2-4 m-4 c-6">
                         <ul class="footer-list">
                             
                                 <h3 class="footer-title">THEO DÕI CHÚNG TÔI TRÊN</h3>
@@ -1205,7 +1270,7 @@
 
                         </ul>
                     </div>
-                    <div class="grid__col-fifth">
+                    <div class="col l-2-4 m-8 c-12">
                         <ul class="footer-list">
                             
                                 <h3 class="footer-title">TẢI ỨNG DỤNG SHOPEE NGAY THÔI </h3>
@@ -1222,7 +1287,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <div class="grid">
+                <div class="grid wide">
                 <p class="copyright">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
                 </div>
             </div>

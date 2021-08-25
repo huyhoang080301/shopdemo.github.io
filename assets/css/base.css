@@ -7,7 +7,8 @@
     --star-gold-color : #FFCE3E;
     --header-height:120px;
     --navbar-height:42px;
-    --searchform-height: calc(var(--header-height) - var(--navbar-height))
+    --searchform-height: calc(var(--header-height) - var(--navbar-height)) ;
+    --header-sort-bar-height:46px;
 }
 
 *{
@@ -24,45 +25,7 @@ html {
     opacity: 0.2;
   }
  
-  /* base responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__fill-width {
-    width: 100%;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-.grid__col-2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: calc(2/12 * 100%);
-}
-
-.grid__col-2-of-10 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: calc(2/10 * 100%);
-}
-.grid__col-10 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: calc(10/12 * 100%);
-}
-
-.grid__col-fifth {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: calc(2.4/12 * 100%);
-}
-
+ 
 
 
 
